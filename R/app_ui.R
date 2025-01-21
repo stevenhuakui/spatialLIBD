@@ -45,7 +45,7 @@ app_ui <- function() {
         navbarPage(
             title = title,
             tabPanel("Overview", tagList(includeMarkdown(
-                file.path(resourcePaths()["www"], "README.md")
+                file.path(getwd(), "README.md")
             ))),
             tabPanel("spot-level data", tagList(
                 sidebarLayout(
